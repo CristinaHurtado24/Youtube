@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+    font-family: 'Mulish', sans-serif;
+}
+
+/*NAV BAR*/
+
+.navbar{
+    height: 11vh;
+    background-color: white;
+    /*border: solid 1px black;*/
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    height: 4.25vh;
+    margin: auto 20px;
+    cursor: pointer;
+}
+
+.logo .youtube{
+    margin: 0 5px;
+}
+
+.search{
+    display: flex;
+    margin: 0 12vw ;
+    align-self: center;
+
+}
+
+.search input{
+    height: 25.9px;
+    width: 39em;
+    outline: rgb(175, 175, 175);
+    outline-style: none;
+    padding: 2px 3px;
+}
+
+.search .lupa{
+    border: solid 1px rgb(175, 175, 175);
+    width: 45px;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.search .lupaimg{
+    align-self: center;
+    margin-top: 4px;
+    margin-left: 4px;
+    padding: 0 10px;
+}
+
+.extras{
+    display: flex;
+    justify-content: flex-end;
+    height: 4.25vh;
+    align-self: center;
+    cursor: pointer;
+}
+
+.extras img{
+    margin: 0 10px;
+}
+
+.container{
+    margin: 2.5vw 5vw;
+    display: grid;
+    grid-template-columns: 1fr 0.60fr;
+    gap: 30px;
+}
+
+.container .playing{
+    background-color: white;
+
+}
+.container .playing .song_playing{
+    background-color: white;
+    margin-left: 75px;
+
+}
+.container .playing .information{
+    padding: 10px 5px;
+    background-color: rgb(240, 240, 240);
+
+}
+.container .playing .information h5{
+    color: rgb(36, 94, 255);
+    padding-bottom: 3px;
+}
+
+.container .playing .actions{
+    background-color: rgb(240, 240, 240);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.container .playing .actions .views{
+    margin-left: 10px;
+}
+.container .playing .actions ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.container .playing .actions ul li{
+    margin-right: 40px;
+}
+.container .playing .actions ul li h5{
+    font-size: 12.5px;
+    margin-right:15px;
+}
+
+.more_music nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;   
+    padding: 10px; 
+    border: solid 1px rgb(175, 175, 175);
+
+}
+
+button{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    
+
+}
+
+.more_music .mix nav ul li.title {
+    font-weight: bold;
+}
+
+.more_music ul{
+    list-style: none;
+    margin: 0 20px;
+    font-size: .8em ;
+}
+
+.more_music .mix section.song{
+    margin: 20px 20px;
+    display: flex;
+    background-color: white;
+    align-self: center;
+}
+
+.more_music .mix{
+    background-color: white;
+    border: solid 1px rgb(175, 175, 175);
+}
+
+.more_music .mix section .song img{
+    height: 50px;
+    margin: 10px 0;
+    margin-left: 20px;
+}
+
+.more_music .mix section .song .info{
+    align-self: center;
+    margin-right: 5px;
+}
+
+.more_music .mix section{
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-color: grey white;
+    scrollbar-width: 10px ;
+}
+
+.more_music .mix section .song .info .s_title{
+    font-size: .8em;
+}
+
+.more_music .mix .music_mix .song{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    cursor: pointer;
+}
+
+.container .playing .artist{
+    background-color: rgb(240, 240, 240);
+    
+}
+
+.container .playing .artist img{
+    border-radius: 100%;
+    height: 80px;
+    margin-top: 10px;
+}
+.container .playing .artist .description{
+    background-color: rgb(240, 240, 240);
+    
+}
+
+.more_music .hashtags ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.more_music .hashtags ul li{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.more_music .hashtags ul li:hover{
+    background-color: grey;
+    color: white;
+}
+
+
+
